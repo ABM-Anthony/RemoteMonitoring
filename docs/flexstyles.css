@@ -1,0 +1,74 @@
+
+/* Global Styles
+--------------------------------------------------------------------------*/
+
+/* Margins ensure text doesn't go off page: */
+/* Width of Whole document: */
+div.main-container {
+  max-width: 100% !important;
+}
+
+main-container type = "text/css"{
+	  max-width: 100% !important;
+	  margin: "1%";
+}
+
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+.dropdown > .link:hover + .dropdown-menu {
+opacity: 1;
+transform: translateY(0px);
+pointer-events: auto;
+}
+
+
+/* Whole document: */
+
+/* Headers */
+h1 {
+    font-size: 25px;
+    color:#AB162B;
+	text-align:center;
+	font-weight:500;
+  }
+h2 {
+  font-size: 20px;
+  color:#00396F;
+  font-weight:400;
+  
+}
+h3 {
+  font-size: 20px;
+  color:#08519c;
+  font-weight:300;
+}
+h4 {
+  font-size: 18px;
+  color:#252525;
+  font-weight:200;
+}
+
+/* Equal width */
+.equalcol {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+/* Add gutters */
+.equalcol {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
